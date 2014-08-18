@@ -46,6 +46,8 @@ import org.compiere.util.CLogger;
 import org.compiere.util.Env;
 import org.compiere.util.Msg;
 import org.compiere.util.Util;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.zkoss.zk.au.out.AuScript;
 import org.zkoss.zk.ui.Component;
 import org.zkoss.zk.ui.Executions;
@@ -81,7 +83,7 @@ public class DefaultDesktop extends TabbedDesktop implements MenuListener, Seria
 	 */
 	private static final long serialVersionUID = -8203958978173990301L;
 
-	private static final CLogger logger = CLogger.getCLogger(DefaultDesktop.class);
+	private static final Logger logger = LoggerFactory.getLogger(DefaultDesktop.class);
 
     private Center windowArea;
 

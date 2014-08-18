@@ -20,9 +20,11 @@ import org.adempiere.webui.ClientInfo;
 import org.adempiere.webui.component.Window;
 import org.adempiere.webui.exception.ApplicationException;
 import org.adempiere.webui.part.AbstractUIPart;
-import org.compiere.model.MMenu;
-import org.compiere.util.CLogger;
-import org.compiere.util.Env;
+//import org.compiere.model.MMenu;
+//import org.compiere.util.CLogger;
+//import org.compiere.util.Env;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.zkoss.zk.ui.event.Events;
 
 /**
@@ -37,7 +39,7 @@ public abstract class AbstractDesktop extends AbstractUIPart implements IDesktop
 	private List<Object> windows = null;
 
 	@SuppressWarnings("unused")
-	private static final CLogger logger = CLogger.getCLogger(AbstractDesktop.class);
+	private static final Logger logger = LoggerFactory.getLogger(AbstractDesktop.class);
 
 	public AbstractDesktop() {
 		windows = new ArrayList<Object>();
